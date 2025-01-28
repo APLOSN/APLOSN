@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APOLSN</title>
+    <link rel="stylesheet" href="/css/loader.css">
     <meta property="og:title" content="APOLSN">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://apolsn.pixelserver.fr">
@@ -15,17 +16,38 @@
     <meta property="og:locale" content="fr_FR">
 </head>
 
-<body>
+<body onload="showLoader()">
+    <div class="terminal-loader">
+        <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+        </div>
+        <div id="loader" class="text">Loading...</div>
+    </div>
 <script>
     // Récupérer la langue du navigateur
     const userLang = navigator.language || navigator.userLanguage;
 
+    function showLoader() {
+        setTimeout(() => {
+        document.getElementById('loader').style.display = 'block';
+        }, 3000); // 3 seconds delay
+    }
+
     // Vérifier si la langue est le français
     if (userLang.startsWith("fr")) {
+        setTimeout(() => {
         window.location.href = "/fr";
+        }, 2000); // 2 seconds delay
         //sinon envoyer en anglais
     } else {
+        setTimeout(() => {
         window.location.href = "/en";
+        }, 2000); // 2 seconds delay
     }
 </script>
 </body>

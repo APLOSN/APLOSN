@@ -25,7 +25,7 @@ body {
     justify-content: center;
     color: white;
 }
-.descritpion-type {
+.description-type {
     text-align: center;
 }
 
@@ -34,4 +34,85 @@ body {
     text-align: center;
     font-family: 'Marianne', sans-serif;
 
+}
+
+nav {
+    background-color: #444;
+    padding: 1em;
+    font-family: 'Marianne', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block; /* Show navbar by default */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    margin: 1em;
+}
+
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide navbar on mobile */
+    }
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            display: block; /* Show navbar on mobile */
+        }
+
+        nav ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        nav ul.active {
+            display: flex;
+        }
 }

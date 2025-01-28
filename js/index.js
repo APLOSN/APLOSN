@@ -5,4 +5,10 @@ function typeWriter() {
         setTimeout(typeWriter, self.typing.speed);
     }
 }
+
+function toggleMenu() {
+    const navUl = document.querySelector('nav ul');
+    navUl.classList.toggle('active');
+}
+
 typeWriter();
