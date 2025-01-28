@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/typer.css">
     <script src="/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('keydown', (function() {
+                let input = '';
+                const target = 'ptdr';
+                return function(event) {
+                    if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+                        return;
+                    }
+                    input += event.key;
+                    if (input.length > target.length) {
+                        input = input.slice(1);
+                    }
+                    if (input === target) {
+                        window.location.href = '/game/tetris';
+                    }
+                };
+            })());
+        });
+    </script>
     <meta property="og:title" content="APOLSN">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://apolsn.pixelserver.fr">
