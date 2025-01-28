@@ -1,28 +1,34 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>APOLSN</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/typer.css">
-    <script src="/js/index.js"></script>
-    <meta property="og:title" content="APOLSN">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.apolsn.pixelserver.fr">
-    <meta property="og:description" content="L'APOLSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
-    <meta property="og:site_name" content="APOLSN">
-    <meta property="og:locale" content="fr_FR">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iHorizon - The Futurest Bot</title>
+    <link rel="icon" type="image/png" href="./assets/img/ihorizon.png" />
+    <meta property="og:title" content="iHorizon" />
+    <meta property="og:description" content="The Futurest Bot." />
+    <meta property="og:image" content="https://ihrz.github.io/assets/img/ihorizon.png" />
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#5a4fcf" />
 </head>
-<budy>
-<div class="typewriter">
-    <h1>APOLSN</h1>
-</div>
-</budy>
+
 <body>
-<div class="descritpion-type">
-    <p>L'APOLSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
-</div>
-<h1 class="action">Nos Actions</h1>
+<script>
+    // Récupérer la langue du navigateur
+    const userLang = navigator.language || navigator.userLanguage;
+
+    // Vérifier si la langue est le français
+    if (userLang.startsWith("fr")) {
+        window.location.href = "/fr";
+        //sinon envoyer en anglais
+    } else {
+        window.location.href = "/en";
+    }
+</script>
 </body>
+
 </html>
