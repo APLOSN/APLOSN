@@ -1,8 +1,12 @@
+let i = 0;
+const txt = 'Your text here'; // Define your text
+const typingSpeed = 100; // Define typing speed in milliseconds
+
 function typeWriter() {
     if (i < txt.length) {
         document.getElementById("content_html").innerHTML += txt.charAt(i);
         i++;
-        setTimeout(typeWriter, self.typing.speed);
+        setTimeout(typeWriter, typingSpeed);
     }
 }
 
@@ -12,3 +16,4 @@ function toggleMenu() {
 }
 
 typeWriter();
+
