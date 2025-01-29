@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Marianne';
+    src: url('../../font/Marianne/fontes-web/Marianne-Regular.woff2') format('woff2'),
+    url('../../font/Marianne/fontes-web/Marianne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Marianne';
+    src: url('../../font/Marianne/fontes-web/Marianne-Bold.woff2') format('woff2'),
+    url('../../font/Marianne/fontes-web/Marianne-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    font-family: 'Marianne', sans-serif;
+}
+
+body {
+    background: #333;
+    color: #fff;
+}
