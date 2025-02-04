@@ -9,6 +9,7 @@
   "icons": [
     {
       "src": "/img/icons/logo-plein.png",
+      "sizes": "192x108",
       "type": "image/png"
     }
   ]
