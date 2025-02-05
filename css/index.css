@@ -84,35 +84,3 @@ nav ul li a:hover {
     padding: 0;
 }
 
-@media (max-width: 768px) {
-    nav {
-        display: none; /* Hide navbar on mobile */
-    }
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .burger-menu {
-        display: flex;
-    }
-
-    @media (max-width: 768px) {
-        nav {
-            display: block; /* Show navbar on mobile */
-        }
-
-        nav ul {
-            display: none;
-            flex-direction: column;
-            width: 100%;
-        }
-
-        nav ul.active {
-            display: flex;
-        }
-}
