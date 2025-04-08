@@ -58,4 +58,12 @@
 </div>
 <h2 class="action">Qui sommes nous</h2>
 </body>
+<div id="footer-placeholder"></div>
+<script>
+    fetch('/pages/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
 </html>

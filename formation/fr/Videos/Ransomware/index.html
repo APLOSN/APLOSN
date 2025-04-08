@@ -72,7 +72,7 @@
   }
   .definition {
     display: block;
-    margin: 10% auto 0 auto;
+    margin: 5% auto 0 auto;
     max-width: 800px;
     max-height: 450px;
     font-family: 'Marianne', sans-serif;
@@ -84,5 +84,15 @@
 <h2 class="titre-explication">Un rançongiciel ou ransomware est un logiciel malveillant ou virus qui bloque l’accès à l’ordinateur ou à ses fichiers et qui réclame à la victime le paiement d’une rançon pour en obtenir de nouveau l’accès. Que faire en cas de ransomware ? Isoler les équipements touchés, ne pas payer la rançon, préserver les preuves, identifier l’origine, déposer plainte…</h2>
 <h2 class="definition">1. Ransomware ou rançongiciel : définition</h2>
 <p class="definition">Les rançongiciels ou ransomwares sont des logiciels malveillants qui bloquent l’accès à l’ordinateur ou à des fichiers en les chiffrant et qui réclament à la victime le paiement d’une rançon pour en obtenir de nouveau l’accès. La machine peut être infectée après l’ouverture d’une pièce jointe, ou après avoir cliqué sur un lien malveillant reçu dans des courriels, ou parfois simplement en naviguant sur des sites compromis, ou encore suite à une intrusion sur le système. Dans la majorité des cas, les cybercriminels exploitent des vulnérabilités connues dans les logiciels, mais dont les correctifs n’ont pas été mis à jour par les victimes. </p>
+<iframe title="Cybermalveillance.gouv.fr - L’accès à mes fichiers informatiques a été bloqué et on me demande une rançon. Que faire ?" src="https://geo.dailymotion.com/player/xfh28.html?video=x7nwi2z&" allowfullscreen allow="autoplay; fullscreen; picture-in-picture; web-share"></iframe>
 </body>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('/pages/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+</script>
 </html>

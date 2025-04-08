@@ -44,4 +44,12 @@
 </style>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7liiWaydIlbQSaVZLxUFzaIp58ohQNjCQ7Rc_Aqr2vzXxFQ/viewform?embedded=true" width="640" height="1527" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
 </body>
+<div id="footer-placeholder"></div>
+<script>
+    fetch('/pages/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
 </html>

@@ -70,13 +70,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
+    width: 400px; /* Largeur fixe */
+    height: auto; /* Hauteur fixe */
   }
 
   @media (max-width: 768px) {
     .box {
-      width: 90%;
-      padding: 12px;
-      top: 20%;
+      width: 100%;
+      padding: 8px;
+      top: 10%;
       transform: translate(-50%, 0);
     }
   }
@@ -89,8 +91,6 @@
       transform: translate(-50%, 0);
     }
   }
-
-
 
   .box-title {
     font-size: 1.5em;
@@ -152,4 +152,12 @@
 
 
 </body>
+<div id="footer-placeholder"></div>
+<script>
+  fetch('/pages/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+</script>
 </html>
