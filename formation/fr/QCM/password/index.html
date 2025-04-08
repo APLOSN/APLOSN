@@ -10,26 +10,6 @@
     <link rel="stylesheet" href="/css/cyber.css">
     <link rel="stylesheet" href="/css/membre.css">
     <script src="/js/index.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.addEventListener('keydown', (function() {
-                let input = '';
-                const target = 'ptdr';
-                return function(event) {
-                    if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-                        return;
-                    }
-                    input += event.key;
-                    if (input.length > target.length) {
-                        input = input.slice(1);
-                    }
-                    if (input === target) {
-                        window.location.href = '/game/';
-                    }
-                };
-            })());
-        });
-    </script>
     <meta property="og:title" content="APLOSN">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://APLOSN.pixelserver.fr">
@@ -45,7 +25,6 @@
             document.getElementById('nav-placeholder').innerHTML = data;
         });
 </script>
-
 <body class="body">
 <budy>
     <div class="typewriter">
@@ -56,6 +35,13 @@
 <div class="description-type">
     <p>L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
 </div>
-<h2 class="action">Qui sommes nous</h2>
+<h2 class="action">TESTEZ VOS CONNAISSANCES</h2>
+<style>
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7liiWaydIlbQSaVZLxUFzaIp58ohQNjCQ7Rc_Aqr2vzXxFQ/viewform?embedded=true" width="640" height="1527" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
 </body>
 </html>
