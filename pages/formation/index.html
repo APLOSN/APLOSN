@@ -1,33 +1,14 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>APLOSN</title>
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/index.css">
-  <link rel="stylesheet" href="/css/typer.css">
-  <script src="/js/index.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.addEventListener('keydown', (function() {
-        let input = '';
-        const target = 'ptdr';
-        return function(event) {
-          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-            return;
-          }
-          input += event.key;
-          if (input.length > target.length) {
-            input = input.slice(1);
-          }
-          if (input === target) {
-            window.location.href = '/game/';
-          }
-        };
-      })());
-    });
-  </script>
+  <link rel="stylesheet" href="/css/loader.css">
   <meta property="og:title" content="APLOSN">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://APLOSN.pixelserver.fr">
@@ -35,33 +16,41 @@
   <meta property="og:site_name" content="APLOSN">
   <meta property="og:locale" content="fr_FR">
 </head>
-<div id="nav-placeholder"></div>
-<script>
-  fetch('/pages/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-          });
-</script>
 
-<body class="body">
-<budy>
-  <div class="typewriter">
-    <h1>APLOSN</h1>
+<body onload="showLoader()">
+<div class="terminal-loader">
+  <div class="terminal-header">
+    <div class="terminal-title">Status</div>
+    <div class="terminal-controls">
+      <div class="control close"></div>
+      <div class="control minimize"></div>
+      <div class="control maximize"></div>
+    </div>
   </div>
-</budy>
-
-<div class="description-type">
-  <p>APLOSN is the Association for the Promotion of Free, Open Source, and Digital Sovereignty in France</p>
+  <div id="loader" class="text">Loading...</div>
 </div>
-<h2 class="action">Who we are ?</h2>
-</body>
-<div id="footer-placeholder"></div>
 <script>
-  fetch('/pages/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
+  // Récupérer la langue du navigateur
+  const userLang = navigator.language || navigator.userLanguage;
+
+  function showLoader() {
+    setTimeout(() => {
+      document.getElementById('loader').style.display = 'block';
+    }, 3000); // 3 seconds delay
+  }
+
+  // Vérifier si la langue est le français
+  if (userLang.startsWith("fr")) {
+    setTimeout(() => {
+      window.location.href = "./fr";
+    }, 2000); // 2 seconds delay
+    //sinon envoyer en anglais
+  } else {
+    setTimeout(() => {
+      window.location.href = "./en";
+    }, 2000); // 2 seconds delay
+  }
 </script>
+</body>
+
 </html>
