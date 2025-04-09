@@ -78,9 +78,29 @@
     font-family: 'Marianne', sans-serif;
   }
 
+  .video-thumbnail {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: 45vw;
+    max-height: 450px;
+    font-family: 'Marianne', sans-serif;
+  }
 </style>
+<script>
+  function playVideo(thumbnail) {
+    const container = thumbnail.parentElement;
+    const iframe = container.querySelector('iframe');
+    thumbnail.style.display = 'none';
+    iframe.style.display = 'block';
+  }
+</script>
 <p class="intro">A city hall victim of a cyberattack, blocked IT servers, stolen data, hackers demanding a ransom... A catastrophic scenario that could be avoided by anticipating the risks!</p>
-<iframe title="Digital security is prepared - ransomware" src="/ressources/Video/EN-RANSOMWARE-Mairie.mp4" allowfullscreen allow="autoplay; fullscreen; picture-in-picture; web-share"></iframe>
+<div class="video-container">
+    <img class="video-thumbnail" src="/ressources/Minia/RANSMOWARE-MAIRIE.png" alt="Ransomware Video Thumbnail" onclick="playVideo(this)">
+    <iframe title="Digital security is prepared - ransomware" src="/ressources/Video/EN-RANSOMWARE-Mairie.mp4" allowfullscreen allow="autoplay; fullscreen; picture-in-picture; web-share" style="display: none;"></iframe>
+</div>
 <h2 class="titre-explication">A ransomware is a malicious software or virus that blocks access to the computer or its files and demands a ransom from the victim to regain access. What to do in case of ransomware? Isolate the affected equipment, do not pay the ransom, preserve evidence, identify the origin, file a complaint...</h2>
 <h2 class="definition">1. Ransomware: Definition</h2>
 <p class="definition">Ransomware is malicious software that blocks access to the computer or files by encrypting them and demands a ransom from the victim to regain access. The machine can be infected after opening an attachment, clicking on a malicious link received in emails, simply browsing compromised websites, or following an intrusion into the system. In most cases, cybercriminals exploit known vulnerabilities in software that have not been updated by the victims.</p>
