@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APLOSN</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/typer.css">
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('keydown', (function() {
+        let input = '';
+        const target = 'ptdr';
+        return function(event) {
+          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+            return;
+          }
+          input += event.key;
+          if (input.length > target.length) {
+            input = input.slice(1);
+          }
+          if (input === target) {
+            window.location.href = '/game/';
+          }
+        };
+      })());
+    });
+  </script>
+  <meta property="og:title" content="APLOSN">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://APLOSN.pixelserver.fr">
+  <meta property="og:description" content="APLOSN is the Association for the Promotion of Free, Open Source, and Digital Sovereignty in France">
+  <meta property="og:site_name" content="APLOSN">
+  <meta property="og:locale" content="fr_FR">
+</head>
+<div id="nav-placeholder"></div>
+<script>
+  fetch('/pages/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          });
+</script>
+
+<body class="body">
+<budy>
+  <div class="typewriter">
+    <h1>APLOSN</h1>
+  </div>
+</budy>
+
+<div class="description-type">
+  <p>APLOSN is the Association for the Promotion of Free, Open Source, and Digital Sovereignty in France</p>
+</div>
+<h2 class="action">Who we are ?</h2>
+</body>
+<div id="footer-placeholder"></div>
+<script>
+  fetch('/pages/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+</script>
+</html>

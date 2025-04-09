@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APLOSN</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/typer.css">
+  <link rel="stylesheet" href="/css/cyber.css">
+  <link rel="stylesheet" href="/css/membre.css">
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('keydown', (function() {
+        let input = '';
+        const target = 'ptdr';
+        return function(event) {
+          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+            return;
+          }
+          input += event.key;
+          if (input.length > target.length) {
+            input = input.slice(1);
+          }
+          if (input === target) {
+            window.location.href = '/game/';
+          }
+        };
+      })());
+    });
+  </script>
+  <meta property="og:title" content="APLOSN">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://APLOSN.pixelserver.fr">
+  <meta property="og:description" content="L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
+  <meta property="og:site_name" content="APLOSN">
+  <meta property="og:locale" content="fr_FR">
+</head>
+<div id="nav-placeholder"></div>
+<script>
+  fetch('/pages/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          });
+</script>
+
+<body class="body">
+<budy>
+  <div class="typewriter">
+    <h1>APLOSN</h1>
+  </div>
+</budy>
+
+<div class="description-type">
+  <p>APLOSN is the Association for the Promotion of Free, Open Source, and Digital Sovereignty in France</p>
+</div>
+<h2 class="action">Our Formations :</h2>
+<style>
+  .box {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    width: 400px; /* Largeur fixe */
+    height: auto; /* Hauteur fixe */
+  }
+
+  @media (max-width: 768px) {
+    .box {
+      width: 100%;
+      padding: 8px;
+      top: 10%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .box {
+      width: 100%;
+      padding: 8px;
+      top: 10%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .box-title {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .box-description {
+    font-size: 1em;
+    margin-bottom: 12px;
+    color: #555;
+  }
+
+  .box-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875em;
+  }
+  .boxx {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+<!-- DÊBUT DE SECTION -->
+<a href="QCM/password" class="boxx">
+  <div class="box">
+    <h2 class="box-title">MANAGE PASSWORD</h2>
+    <p class="box-description">Simple mqa for learn how manage password</p>
+    <div class="box-tags">
+      <span class="tag" style="background-color: #8B00FF">Access</span>
+      <span class="tag" style="background-color: #090046">MQA</span>
+    </div>
+  </div>
+</a>
+<br>
+<!-- FIN DE SECTION -->
+
+<!-- DÊBUT DE SECTION -->
+<br>
+<a href="Videos/Ransomware" class="boxx">
+  <div class="box">
+    <h2 class="box-title">RANSMOWARE</h2>
+    <p class="box-description">what'is a ransomware and how protect yourself ?</p>
+    <div class="box-tags">
+      <span class="tag" style="background-color: #ff0000">Malware</span>
+      <span class="tag" style="background-color: #00a6ff">Video</span>
+    </div>
+  </div>
+</a>
+<br>
+<!-- FIN DE SECTION -->
+
+
+</body>
+<div id="footer-placeholder"></div>
+<script>
+  fetch('/pages/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+</script>
+</html>
