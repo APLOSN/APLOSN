@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APLOSN</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/typer.css">
+  <link rel="stylesheet" href="/css/cyber.css">
+  <link rel="stylesheet" href="/css/membre.css">
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('keydown', (function() {
+        let input = '';
+        const target = 'ptdr';
+        return function(event) {
+          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+            return;
+          }
+          input += event.key;
+          if (input.length > target.length) {
+            input = input.slice(1);
+          }
+          if (input === target) {
+            window.location.href = '/game/';
+          }
+        };
+      })());
+    });
+  </script>
+  <meta property="og:title" content="APLOSN">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://APLOSN.pixelserver.fr">
+  <meta property="og:description" content="L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
+  <meta property="og:site_name" content="APLOSN">
+  <meta property="og:locale" content="fr_FR">
+</head>
+<div id="nav-placeholder"></div>
+<script>
+  fetch('/pages/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          });
+</script>
+
+<body class="body">
+<budy>
+  <div class="typewriter">
+    <h1>APLOSN</h1>
+  </div>
+</budy>
+
+<div class="description-type">
+  <p>L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
+</div>
+<h2 class="action">Nos Formations :</h2>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #323232;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .member {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  .member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .member p {
+    margin: 5px 0 0 0;
+    color: #ffffff;
+  }
+</style>
+
+<section>
+  <h2>Our Members</h2>
+  <div class="member">
+    <img src="https://cdn.discordapp.com/avatars/786144801456259092/a_ae7b71bb9b330e81be977120b4986f81.gif?size=512" alt="Lux_">
+    <p>Lux_</p>
+  </div>
+  <div class="member">
+    <img src="https://cdn.discordapp.com/avatars/1072121997942861824/c4069a23e60d0d883621195c63cfbc5f.png?size=512" alt="Asuna Cracotte">
+    <p>Asuna Cracotte™</p>
+  </div>
+</section>
+
+</body>
+<div id="footer-placeholder"></div>
+<script>
+  fetch('/pages/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+</script>
+</html>
