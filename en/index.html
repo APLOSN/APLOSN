@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="/css/typer.css">
     <script src="/js/index.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.addEventListener('keydown', (function() {
+            addEventListener('keydown', (function() {
                 let input = '';
                 const target = 'ptdr';
                 return function(event) {
@@ -26,7 +25,6 @@
                     }
                 };
             })());
-        });
     </script>
     <meta property="og:title" content="APLOSN">
     <meta property="og:type" content="website">
