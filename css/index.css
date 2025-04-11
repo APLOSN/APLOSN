@@ -84,3 +84,32 @@ nav ul li a:hover {
     padding: 0;
 }
 
+body {
+    font-family: 'Marianne', sans-serif;
+    margin-top: 2rem;
+    justify-content: center;
+}
+li {
+    font-family: 'Marianne', sans-serif;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+p {
+    font-family: 'Marianne', sans-serif;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    font-family: 'Marianne', sans-serif;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+h3 {
+    font-family: 'Marianne', sans-serif;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+}
