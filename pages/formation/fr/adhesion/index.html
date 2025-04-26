@@ -1,0 +1,56 @@
+ <!doctype html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>APLOSN</title>
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/typer.css">
+        <link rel="stylesheet" href="/css/cyber.css">
+        <link rel="stylesheet" href="/css/membre.css">
+        <script src="/js/index.js"></script>
+        <meta property="og:title" content="APLOSN">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://APLOSN.pixelserver.fr">
+        <meta property="og:description" content="L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
+        <meta property="og:site_name" content="APLOSN">
+        <meta property="og:locale" content="fr_FR">
+    </head>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('/pages/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+    <body class="body">
+    <budy>
+        <div class="typewriter">
+            <h1>APLOSN</h1>
+        </div>
+    </budy>
+
+    <div class="description-type">
+        <p>L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
+    </div>
+    <h2 class="action">Adhérez !</h2>
+    <style>
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <iframe id="iframe_assoconnect" src="https://aplosn.assoconnect.com/collect/description/559493-y-adhesion-aplosn?iframe=1" allow="payment" width="100%" style="overflow: hidden; border: 0; max-height: none;" scrolling="no" onload="window.location.href='#iframe_assoconnect'"></iframe><script>window.addEventListener("message", function(event) {if(event.data.action === "iframe.height" && (event.origin === "https://aplosn.assoconnect.com" || event.origin === "https://pay.assoconnect.com")){document.getElementById("iframe_assoconnect").height = event.data.height;}});</script><style>#iframe_assoconnect{border: 0}</style>
+
+    </body>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/pages/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    </html>
