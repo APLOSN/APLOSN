@@ -11,7 +11,7 @@ This project is licensed under the MIT license. All rights reserved to APLOSN.
 The APLOSN project is structured to separate different responsibilities and facilitate code maintenance and evolution. Here is an overview of the project's architecture:
 
 - [`index.html`](./index.html): The homepage of the site, with a script to redirect users based on their language.
-- `en/`: Contains the English pages, such as [`en/music/index.html`](./en/music/index.html).
+- `en/`: Contains the English pages.
 - `fr/`: Contains the French pages.
 - `css/`: Contains the CSS files for the site's styling.
 - `js/`: Contains the JavaScript files for interactive features.
@@ -50,7 +50,7 @@ Ce projet est sous licence MIT. Tous droits réservés à APLOSN.
 Le projet APLOSN est structuré de manière à séparer les différentes responsabilités et à faciliter la maintenance et l'évolution du code. Voici un aperçu de l'architecture du projet :
 
 - [`index.html`](./index.html)` : La page d'accueil du site, avec un script pour rediriger les utilisateurs en fonction de leur langue.
-- `en/` : Contient les pages en anglais, comme [`en/music/index.html`](./en/music/index.html).
+- `en/` : Contient les pages en anglais.
 - `fr/` : Contient les pages en français.
 - `css/` : Contient les fichiers CSS pour le style du site.
 - `js/` : Contient les fichiers JavaScript pour les fonctionnalités interactives.
