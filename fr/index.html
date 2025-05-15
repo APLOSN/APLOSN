@@ -17,26 +17,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="/css/cyber.css">
     <link rel="stylesheet" href="/css/membre.css">
     <script src="/js/index.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.addEventListener('keydown', (function() {
-                let input = '';
-                const target = 'ptdr';
-                return function(event) {
-                    if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-                        return;
-                    }
-                    input += event.key;
-                    if (input.length > target.length) {
-                        input = input.slice(1);
-                    }
-                    if (input === target) {
-                        window.location.href = '/game/';
-                    }
-                };
-            })());
-        });
-    </script>
     <meta property="og:title" content="APLOSN">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://APLOSN.pixelserver.fr">
@@ -54,10 +34,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <body class="body">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP9XQP2L"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <budy>
     <div class="typewriter">
         <h1>APLOSN</h1>

@@ -1,56 +1,75 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>APLOSN</title>
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/css/loader.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/typer.css">
+    <link rel="stylesheet" href="/css/cyber.css">
+    <link rel="stylesheet" href="/css/membre.css">
+    <script src="/js/index.js"></script>
     <meta property="og:title" content="APLOSN">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://APLOSN.pixelserver.fr">
-    <meta property="og:description" content="APLOSN is the Association for the Promotion of Free, Open Source, and Digital Sovereignty in France">
+    <meta property="og:description" content="L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
     <meta property="og:site_name" content="APLOSN">
     <meta property="og:locale" content="fr_FR">
 </head>
-
-<body onload="showLoader()">
-    <div class="terminal-loader">
-        <div class="terminal-header">
-            <div class="terminal-title">Status</div>
-            <div class="terminal-controls">
-                <div class="control close"></div>
-                <div class="control minimize"></div>
-                <div class="control maximize"></div>
-            </div>
-        </div>
-        <div id="loader" class="text">Loading...</div>
-    </div>
+<div id="nav-placeholder"></div>
 <script>
-    // Récupérer la langue du navigateur
-    const userLang = navigator.language || navigator.userLanguage;
-
-    function showLoader() {
-        setTimeout(() => {
-        document.getElementById('loader').style.display = 'block';
-        }, 3000); // 3 seconds delay
-    }
-
-    // Vérifier si la langue est le français
-    if (userLang.startsWith("fr")) {
-        setTimeout(() => {
-        window.location.href = "/fr";
-        }, 2000); // 2 seconds delay
-        //sinon envoyer en anglais
-    } else {
-        setTimeout(() => {
-        window.location.href = "/en";
-        }, 2000); // 2 seconds delay
-    }
+    fetch('/pages/nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
 </script>
-</body>
 
+<body>
+<header>
+    <budy>
+        <div class="typewriter">
+            <h1>APLOSN</h1>
+        </div>
+    </budy>
+    <div class="description-type">
+        <p data-i18n="description_header">L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
+    </div>
+    <div class="language-switch">
+        <label for="language-selector">Langue / Language:</label>
+        <select id="language-selector">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+</header>
+
+<main>
+    <section id="qui-sommes-nous" style="padding: 2rem;">
+        <h2 class="action" data-i18n="who_we_are">Qui sommes nous ?</h2>
+
+        <p data-i18n="paragraph1"></p>
+        <p data-i18n="mission"></p>
+        <p data-i18n="paragraph2"></p>
+
+        <h3 data-i18n="actions_title"></h3>
+        <ul id="actions-list"></ul>
+
+        <p data-i18n="ctf_intro"></p>
+        <ul id="ctf-list"></ul>
+
+        <p data-i18n="closing"></p>
+    </section>
+</main>
+<div id="footer-placeholder"></div>
+<script>
+    fetch('/pages/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+<script src="/lang.js"></script>
+</body>
 </html>

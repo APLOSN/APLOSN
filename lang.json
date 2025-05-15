@@ -1,0 +1,44 @@
+{
+  "fr": {
+    "title": "APLOSN",
+    "description_header": "L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France",
+    "who_we_are": "Qui sommes nous ?",
+    "paragraph1": "Nous sommes une association engagée pour un numérique libre, éthique et souverain.",
+    "mission": "Notre mission : promouvoir l'utilisation, le développement et la diffusion des logiciels libres et des solutions open source.",
+    "paragraph2": "Face aux enjeux croissants de la souveraineté numérique, nous sensibilisons le public, les entreprises, les établissements scolaires et les collectivités aux alternatives respectueuses des libertés numériques. Nous défendons les droits des utilisateurs et soutenons toutes les initiatives visant à renforcer l’indépendance technologique en France.",
+    "actions_title": "Nos actions s’articulent autour de plusieurs axes :",
+    "actions_list": [
+      "Sensibilisation et vulgarisation autour des enjeux du logiciel libre, de la cybersécurité et de l’open source ;",
+      "Organisation d’événements : conférences, ateliers, formations, rencontres thématiques ;",
+      "Formation et accompagnement pour un numérique éthique, durable et responsable."
+    ],
+    "ctf_intro": "Nous avons également constitué une équipe Capture The Flag (CTF), active et structurée, afin de :",
+    "ctf_list": [
+      "Participer à des compétitions nationales et internationales ;",
+      "Partager les savoirs techniques dans un esprit d’entraide et de dépassement de soi ;",
+      "Valoriser les talents émergents dans un cadre respectueux de la loi et des valeurs du logiciel libre."
+    ],
+    "closing": "Ensemble, nous œuvrons pour un futur numérique plus libre, plus juste, et plus respectueux des utilisateurs."
+  },
+  "en": {
+    "title": "APLOSN",
+    "description_header": "APLOSN is the Association for the Promotion of Free Software, Open Source and Digital Sovereignty in France",
+    "who_we_are": "Who are we?",
+    "paragraph1": "We are an organization committed to a free, ethical, and sovereign digital world.",
+    "mission": "Our mission: promote the use, development, and distribution of free and open-source software solutions.",
+    "paragraph2": "Given the growing challenges of digital sovereignty, we raise awareness among the public, companies, schools, and institutions about alternatives that respect digital freedoms. We defend users' rights and support all initiatives that aim to strengthen technological independence in France.",
+    "actions_title": "Our actions focus on several areas:",
+    "actions_list": [
+      "Awareness and outreach about free software, cybersecurity, and open source issues;",
+      "Event organization: conferences, workshops, training, thematic meetings;",
+      "Training and support for ethical, sustainable, and responsible digital practices."
+    ],
+    "ctf_intro": "We have also formed a Capture The Flag (CTF) team, active and organized, in order to:",
+    "ctf_list": [
+      "Participate in national and international competitions;",
+      "Share technical knowledge in a spirit of mutual aid and self-improvement;",
+      "Highlight emerging talents within the framework of the law and free software values."
+    ],
+    "closing": "Together, we are working for a freer, fairer, and more respectful digital future."
+  }
+}
