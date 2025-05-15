@@ -20,7 +20,7 @@
 }
 
 body {
-    background: #333;
+    background: #030319;
     padding-top: 5em;
     justify-content: center;
     color: white;
@@ -61,6 +61,9 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+li {
+    text-decoration: none;
 }
 
 nav ul li a:hover {
