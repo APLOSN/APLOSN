@@ -12,29 +12,20 @@ function updateText() {
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (langData[key]) {
             if (Array.isArray(langData[key])) {
-                if (key === "actions_list") {
-                    const ul = document.getElementById("actions-list");
+            const ul = document.querySelector(`[data-i18n="${key}"]`);
+            if (ul) {
                     ul.innerHTML = "";
                     langData[key].forEach(item => {
                         const li = document.createElement("li");
                         li.textContent = item;
                         ul.appendChild(li);
                     });
-                } else if (key === "ctf_list") {
-                    const ul = document.getElementById("ctf-list");
-                    ul.innerHTML = "";
-                    langData[key].forEach(item => {
-                        const li = document.createElement("li");
-                        li.textContent = item;
-                        ul.appendChild(li);
-                    });
-                }
-            } else {
-                el.innerHTML = langData[key];
             }
-        }
+        } else {
+            el.innerHTML = langData[key];
+                }
+
     });
 
     document.documentElement.lang = currentLang;

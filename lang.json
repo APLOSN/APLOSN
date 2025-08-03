@@ -12,13 +12,16 @@
       "Organisation d’événements : conférences, ateliers, formations, rencontres thématiques ;",
       "Formation et accompagnement pour un numérique éthique, durable et responsable."
     ],
-    "ctf_intro": "Nous avons également constitué une équipe Capture The Flag (CTF), active et structurée, afin de :",
+    "ctf_title": "Nous avons également constitué une équipe Capture The Flag (CTF), active et structurée, afin de :",
     "ctf_list": [
       "Participer à des compétitions nationales et internationales ;",
       "Partager les savoirs techniques dans un esprit d’entraide et de dépassement de soi ;",
       "Valoriser les talents émergents dans un cadre respectueux de la loi et des valeurs du logiciel libre."
     ],
-    "closing": "Ensemble, nous œuvrons pour un futur numérique plus libre, plus juste, et plus respectueux des utilisateurs."
+    "closing": "Ensemble, nous œuvrons pour un futur numérique plus libre, plus juste, et plus respectueux des utilisateurs.",
+    "motto": "Notre devise : « L’humanité de demain sera libre et open source, nous devons donc commencer ce soir. »",
+    "partner": "Hackuten",
+    "partner-title": "Nos partenaires"
   },
   "en": {
     "title": "APLOSN",
@@ -39,6 +42,9 @@
       "Share technical knowledge in a spirit of mutual aid and self-improvement;",
       "Highlight emerging talents within the framework of the law and free software values."
     ],
-    "closing": "Together, we are working for a freer, fairer, and more respectful digital future."
+    "closing": "Together, we are working for a freer, fairer, and more respectful digital future.",
+    "motto": "Our motto: \"Tomorrow's humanity will be free and open source, so we must start tonight.\"",
+    "partner": "Hackuten",
+    "partner-title": "Our partners"
   }
 }
