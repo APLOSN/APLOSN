@@ -150,3 +150,7 @@ img.logo-partner {
     display: block;
     margin: 0 auto;
 }
+#partner-title {
+    justify-content: center;
+    text-align: center;
+}
