@@ -68,21 +68,41 @@
 
 
 </main>
-<div class="language-switch">
-    <label for="language-selector">Langue / Language:</label>
-    <select id="language-selector">
-        <option value="fr">Français</option>
-        <option value="en">English</option>
-    </select>
-</div>
+
 <div id="footer-placeholder"></div>
-<script>
-    fetch('/pages/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        });
-</script>
+
+<section class="footer">
+    <footer>
+        <div class="language-switch">
+            <label for="language-selector">Langue / Language:</label>
+            <select id="language-selector">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <p data-i18n="motto"></p>
+        <p>&copy; 2025 APLOSN. All rights reserved.</p>
+
+    </footer>
+
+</section>
+<!-- TODO: Add this css to a stylesheet -->
+<style>
+    .footer {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    footer {
+        background-color: #1f1f1f;
+        padding: 10px;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
 <script src="/lang.js"></script>
 </body>
 </html>
