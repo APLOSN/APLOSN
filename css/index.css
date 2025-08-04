@@ -106,6 +106,12 @@ p {
     justify-content: center;
     text-align: center;
 }
+h1 {
+    font-family: 'Marianne', sans-serif;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+}
 h2 {
     font-family: 'Marianne', sans-serif;
     margin-top: 2rem;
@@ -113,6 +119,12 @@ h2 {
     text-align: center;
 }
 h3 {
+    font-family: 'Marianne', sans-serif;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+h4 {
     font-family: 'Marianne', sans-serif;
     margin-top: 2rem;
     justify-content: center;

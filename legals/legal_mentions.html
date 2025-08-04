@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APLOSN</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/typer.css">
+    <link rel="stylesheet" href="/css/cyber.css">
+    <link rel="stylesheet" href="/css/membre.css">
+    <script src="/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('keydown', (function() {
+                let input = '';
+                const target = 'ptdr';
+                return function(event) {
+                    if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+                        return;
+                    }
+                    input += event.key;
+                    if (input.length > target.length) {
+                        input = input.slice(1);
+                    }
+                    if (input === target) {
+                        window.location.href = '/game/';
+                    }
+                };
+            })());
+        });
+    </script>
+    <meta property="og:title" content="APLOSN">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://aplosn.fr">
+    <meta property="og:description" content="L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
+    <meta property="og:site_name" content="APLOSN">
+    <meta property="og:locale" content="fr_FR">
+</head>
+<div id="nav-placeholder"></div>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membres.html">Membres</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/pages/formation">Formation</a></li>
+        <li><a href="/join_us.html">Join Us</a></li>
+        <!--    <li class="connect"><a href="/pages/login/login.html">Login</a></li>-->
+
+    </ul>
+</nav>
+<link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
+
+
+<body class="body">
+<budy>
+    <div class="typewriter">
+        <h1>APLOSN</h1>
+    </div>
+</budy>
+
+<div class="description-type">
+    <p>L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
+</div>
+<h2 class="action">Mentions legales</h2>
+
+
+<section class="legal-mentions">
+    <h3>Informations légales</h3>
+    <p><strong>Nom de l'association :</strong> APLOSN – Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique</p>
+    <p><strong>Forme juridique :</strong> Association loi 1901</p>
+    <p><strong>Siège social :</strong> 60 impasse des Jardins, 38300 Ruy, France</p>
+    <p><strong>Président :</strong> Joam Brochard</p>
+    <p><strong>SIRET :</strong> 943 751 834 00012</p>
+    <p><strong>SIREN :</strong> 943 751 834</p>
+    <p><strong>RNA :</strong> W382011690</p>
+    <p><strong>Numéro de TVA intracommunautaire :</strong> FR17943751834</p>
+    <p><strong>Email :</strong> contact@aplosn.fr (à adapter si besoin)</p>
+
+    <h4>Hébergement</h4>
+    <p>Le site est hébergé par <strong>GitHub Pages</strong><br>
+        GitHub, Inc.<br>
+        88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br>
+        <a href="https://pages.github.com" target="_blank">https://pages.github.com</a></p>
+
+    <h4>Nom de domaine</h4>
+    <p>Le nom de domaine <strong>aplosn.fr</strong> est enregistré et distribué par <strong>OVH</strong><br>
+        OVH SAS – 2 rue Kellermann – 59100 Roubaix – France<br>
+        <a href="https://www.ovh.com" target="_blank">https://www.ovh.com</a></p>
+
+    <h4>Données personnelles</h4>
+    <p>Conformément à la loi "Informatique et Libertés" et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant. Pour exercer ces droits, contactez-nous à l’adresse : <em>contact@aplosn.fr</em></p>
+</section>
+
+
+
+</body>
+<div id="footer-placeholder"></div>
+
+<section class="footer">
+    <footer>
+        <div class="language-switch">
+            <label for="language-selector">Langue / Language:</label>
+            <select id="language-selector">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <p data-i18n="motto"></p>
+        <p>&copy; 2025 APLOSN. All rights reserved.</p>
+
+    </footer>
+    <link rel="stylesheet" href="/css/footer.css">
+
+
+</section>
+<script src="/lang.js"></script>
+
+</html>
