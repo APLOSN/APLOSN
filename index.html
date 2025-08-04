@@ -18,13 +18,19 @@
     <meta property="og:locale" content="fr_FR">
 </head>
 <div id="nav-placeholder"></div>
-<script>
-    fetch('/pages/nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        });
-</script>
+<nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about/membres.html">Membres</a></li>
+        <li><a href="/pages/contact">Contact</a></li>
+        <li><a href="/pages/formation">Formation</a></li>
+        <li><a href="/pages/adhesion">Join Us</a></li>
+        <li><a href="/pages/newsletter">Newsletter</a></li>
+        <!--    <li class="connect"><a href="/pages/login/login.html">Login</a></li>-->
+
+    </ul>
+</nav>
+<link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
 
 <body>
 <header>
