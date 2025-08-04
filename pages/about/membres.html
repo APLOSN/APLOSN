@@ -10,97 +10,132 @@
   <link rel="stylesheet" href="/css/cyber.css">
   <link rel="stylesheet" href="/css/membre.css">
   <script src="/js/index.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.addEventListener('keydown', (function() {
-        let input = '';
-        const target = 'ptdr';
-        return function(event) {
-          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-            return;
-          }
-          input += event.key;
-          if (input.length > target.length) {
-            input = input.slice(1);
-          }
-          if (input === target) {
-            window.location.href = '/game/';
-          }
-        };
-      })());
-    });
-  </script>
   <meta property="og:title" content="APLOSN">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://APLOSN.pixelserver.fr">
+  <meta property="og:url" content="https://aplosn.fr">
   <meta property="og:description" content="L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
   <meta property="og:site_name" content="APLOSN">
   <meta property="og:locale" content="fr_FR">
 </head>
 <div id="nav-placeholder"></div>
-<script>
-  fetch('/pages/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-          });
-</script>
+<nav>
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about/membres.html">Membres</a></li>
+    <li><a href="/pages/contact">Contact</a></li>
+    <li><a href="/pages/formation">Formation</a></li>
+    <li><a href="/pages/adhesion">Join Us</a></li>
+    <li><a href="/pages/newsletter">Newsletter</a></li>
+    <!--    <li class="connect"><a href="/pages/login/login.html">Login</a></li>-->
 
-<body class="body">
-<budy>
-  <div class="typewriter">
-    <h1>APLOSN</h1>
+  </ul>
+</nav>
+<link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
+<div class="page-container">
+  <div class="content">
+    <body class="body">
+    <budy>
+      <div class="typewriter">
+        <h1>APLOSN</h1>
+      </div>
+    </budy>
+
+    <div class="description-type">
+      <p>L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
+    </div>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #323232;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .member {
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+      }
+      .member img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+      .member p {
+        margin: 5px 0 0 0;
+        color: #ffffff;
+      }
+    </style>
+
+    <section>
+      <h2>Our Members</h2>
+      <div class="member">
+        <img src="https://cdn.discordapp.com/avatars/786144801456259092/a_ae7b71bb9b330e81be977120b4986f81.gif?size=512" alt="Lux_">
+        <p>Lux_</p>
+        <p>president</p>
+      </div>
+      <div class="member">
+        <img src="https://cdn.discordapp.com/avatars/1072121997942861824/50393dda6612c4ac4efb257193bf53f9.webp?size=160" alt="Asuna Cracotte">
+        <p>Asuna Cracotte™</p>
+        <p>secretary</p>
+      </div>
+      <div class="member">
+        <img src="https://cdn.discordapp.com/avatars/374223856254189600/5945c592e52a7d0226ce047ed874901d.webp?size=160" alt="Arrkyo">
+        <p>Arrkyo</p>
+        <p>treasurer</p>
+      </div>
+    </section>
   </div>
-</budy>
 
-<div class="description-type">
-  <p>L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
-</div>
-<h2 class="action">Nos Formations :</h2>
+<section class="footer">
+  <footer>
+    <div class="language-switch">
+      <label for="language-selector">Langue / Language:</label>
+      <select id="language-selector">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    <p data-i18n="motto"></p>
+    <p>&copy; 2025 APLOSN. All rights reserved.</p>
+  </footer>
+</section>
+
+<!-- TODO: Add this css to a stylesheet -->
 <style>
-  body {
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1; /* pousse le footer en bas */
+  }
+
+  .footer {
     font-family: Arial, sans-serif;
-    background-color: #323232;
+    background-color: #121212;
     color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
   }
-  .member {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
+
+  .footer footer {
+    background-color: #1f1f1f;
+    padding: 10px;
+    width: 100%;
   }
-  .member img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-  }
-  .member p {
-    margin: 5px 0 0 0;
-    color: #ffffff;
-  }
+
+
 </style>
-
-<section>
-  <h2>Our Members</h2>
-  <div class="member">
-    <img src="https://cdn.discordapp.com/avatars/786144801456259092/a_ae7b71bb9b330e81be977120b4986f81.gif?size=512" alt="Lux_">
-    <p>Lux_</p>
-  </div>
-  <div class="member">
-    <img src="https://cdn.discordapp.com/avatars/1072121997942861824/c4069a23e60d0d883621195c63cfbc5f.png?size=512" alt="Asuna Cracotte">
-    <p>Asuna Cracotte™</p>
-  </div>
-</section>
-
-</body>
-<div id="footer-placeholder"></div>
-<script>
-  fetch('/pages/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-</script>
+</div>
+  </body>
 </html>
