@@ -18,13 +18,19 @@
   <meta property="og:locale" content="fr_FR">
 </head>
 <div id="nav-placeholder"></div>
-<script>
-  fetch('/pages/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-          });
-</script>
+<nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/membres.html">Membres</a></li>
+        <li><a href="/contact.html">Contact</a></li>        <li><a href="/pages/formation">Formation</a></li>
+        <li><a href="/pages/adhesion">Join Us</a></li>
+        <li><a href="/pages/newsletter">Newsletter</a></li>
+        <!--    <li class="connect"><a href="/pages/login/login.html">Login</a></li>-->
+
+    </ul>
+</nav>
+<link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
+
 <body class="body">
 <budy>
   <div class="typewriter">
@@ -88,11 +94,20 @@
 </body>
 
 <div id="footer-placeholder"></div>
-<script>
-  fetch('/pages/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-</script>
+
+<section class="footer">
+    <footer>
+        <div class="language-switch">
+            <label for="language-selector">Langue / Language:</label>
+            <select id="language-selector">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <p data-i18n="motto"></p>
+        <p>&copy; 2025 APLOSN. All rights reserved.</p>
+
+    </footer>
+
+</section>
 </html>

@@ -21,7 +21,13 @@
     "closing": "Ensemble, nous œuvrons pour un futur numérique plus libre, plus juste, et plus respectueux des utilisateurs.",
     "motto": "Notre devise : « L’humanité de demain sera libre et open source, nous devons donc commencer ce soir. »",
     "partner": "Hackuten",
-    "partner-title": "Nos partenaires"
+    "partner-title": "Nos partenaires",
+    "email": "votre email :",
+    "last_name": "votre nom de famille :",
+    "name": "votre prénom :",
+    "phone_number": "votre numéro de téléphone :",
+    "message": "votre message :",
+    "submit": "envoyer"
   },
   "en": {
     "title": "APLOSN",
@@ -45,6 +51,12 @@
     "closing": "Together, we are working for a freer, fairer, and more respectful digital future.",
     "motto": "Our motto: \"Tomorrow's humanity will be free and open source, so we must start tonight.\"",
     "partner": "Hackuten",
-    "partner-title": "Our partners"
+    "partner-title": "Our partners",
+    "email": "your email :",
+    "last_name": "your last name :",
+    "name": "your name :",
+    "phone_number": "your phone number :",
+    "message": "your message :",
+    "submit": "submit"
   }
 }

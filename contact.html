@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -48,13 +38,19 @@
   <meta property="og:locale" content="fr_FR">
 </head>
 <div id="nav-placeholder"></div>
-<script>
-  fetch('/pages/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-          });
-</script>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membres.html">Membres</a></li>
+        <li><a href="contact.html">Contact</a></li>        <li><a href="/pages/formation">Formation</a></li>
+        <li><a href="/pages/adhesion">Join Us</a></li>
+        <li><a href="/pages/newsletter">Newsletter</a></li>
+        <!--    <li class="connect"><a href="/pages/login/login.html">Login</a></li>-->
+
+    </ul>
+</nav>
+<link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
+
 
 <body class="body">
 <budy>
@@ -133,34 +129,45 @@
 <form action="https://formsubmit.co/aplosn@pixelserver.fr" method="POST">
 
   <!-- Champ PRÉNOM -->
-  <label for="email">E-Mail (requis) :</label><br>
+  <label for="email" data-i18n="email"></label><br>
   <input type="email" id="email" name="email" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"><br><br>
   <!-- Champ NOM -->
-  <label for="nom">Nom (requis) :</label><br>
+  <label for="nom" data-i18n="last_name"></label><br>
   <input type="text" id="nom" name="nom" required pattern="[A-Za-zÀ-ÿ\s]+"><br>
 
   <!-- Champ PRÉNOM -->
-  <label for="prenom">Prénom (requis) :</label><br>
+  <label for="prenom" data-i18n="name"></label><br>
   <input type="text" id="prenom" name="prenom" required pattern="[A-Za-zÀ-ÿ\s]+"><br><br>
 
   <!-- Champ TÉLÉPHONE -->
-  <label for="telephone">Téléphone (facultatif) :</label><br>
+  <label for="telephone" data-i18n="phone_number"></label><br>
   <input type="tel" id="telephone" name="telephone" pattern="\d+" title="Veuillez entrer uniquement des chiffres."><br><br>
 
   <!-- Champ MESSAGE -->
-  <label for="message">Message (requis) :</label><br>
+  <label for="message" data-i18n="message"></label><br>
   <textarea id="message" name="message" rows="6" required pattern="[A-Za-zÀ-ÿ\s]+"></textarea><br><br>
 
   <!-- Bouton d'envoi -->
-  <button type="submit">Envoyer</button>
+  <button type="submit" data-i18n="submit"></button>
 </form>
 </body>
 <div id="footer-placeholder"></div>
-<script>
-  fetch('/pages/footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          });
-</script>
+
+<section class="footer">
+    <footer>
+        <div class="language-switch">
+            <label for="language-selector">Langue / Language:</label>
+            <select id="language-selector">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <p data-i18n="motto"></p>
+        <p>&copy; 2025 APLOSN. All rights reserved.</p>
+
+    </footer>
+
+</section>
+<script src="/lang.js"></script>
+
 </html>
