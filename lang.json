@@ -27,7 +27,10 @@
     "name": "votre prénom :",
     "phone_number": "votre numéro de téléphone :",
     "message": "votre message :",
-    "submit": "envoyer"
+    "submit": "envoyer",
+    "ctf-name": "Dino CTF",
+    "ctf-description": "Dino CTF est une compétition Capture The Flag (CTF) organisée par l'APLOSN, conçue pour mettre à l'épreuve les compétences des participants en cybersécurité et en hacking éthique. Elle propose une variété de défis qui testent les connaissances dans des domaines tels que la cryptographie, la sécurité web, l'ingénierie inverse, et plus encore. L'événement vise à promouvoir l'apprentissage et la collaboration au sein de la communauté de la cybersécurité tout en respectant les principes du logiciel libre et de l'open source.",
+    "ctf-place": "Lieu : Lyon, France"
   },
   "en": {
     "title": "APLOSN",
@@ -57,6 +60,9 @@
     "name": "your name :",
     "phone_number": "your phone number :",
     "message": "your message :",
-    "submit": "submit"
+    "submit": "submit",
+    "ctf-name": "Dino CTF",
+    "ctf-description": "Dino CTF is a Capture The Flag (CTF) competition organized by APLOSN, designed to challenge participants' skills in cybersecurity and ethical hacking. It features a variety of challenges that test knowledge in areas such as cryptography, web security, reverse engineering, and more. The event aims to promote learning and collaboration within the cybersecurity community while adhering to the principles of free software and open source.",
+    "ctf-place": "Location: Lyon, France"
   }
 }
