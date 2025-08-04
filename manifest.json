@@ -1,6 +1,7 @@
 {
   "name": "APLOSN",
   "short_name": "APLOSN",
+  "RNA_number": "W382011690",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
