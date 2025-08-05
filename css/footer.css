@@ -22,3 +22,10 @@ footer {
     margin-top: 10px;
     text-decoration: none;
 }
+.fa-x-twitter:hover,
+.fa-linkedin:hover,
+.fa-discord:hover {
+    color: #1da1f2; /* Change to your preferred color */
+    transition: color 0.2s;
+    cursor: pointer;
+}
