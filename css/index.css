@@ -168,3 +168,14 @@ img.logo-partner {
     justify-content: center;
     text-align: center;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
+.buy-ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
