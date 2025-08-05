@@ -68,9 +68,7 @@ li {
     list-style: none;
 }
 
-nav ul li a:hover {
-    color: #ddd;
-}
+
 
 .burger-menu {
     display: flex;
@@ -189,9 +187,30 @@ option {
     border-radius: 8px;
     background-color: transparent;
     border-color: transparent;
-    color: #000000;
+    color: #ffffff;
 }
 .fa-up-right-from-square:hover {
     transform: scale(1.2);
     transition: transform 0.2s;
+}
+.nav {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ff0000;
+    transition: width 0.3s ease-out;
+}
+
+.nav:hover::after {
+    width: 100%;
 }

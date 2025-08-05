@@ -10,26 +10,6 @@
   <link rel="stylesheet" href="/css/cyber.css">
   <link rel="stylesheet" href="/css/membre.css">
   <script src="/js/index.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.addEventListener('keydown', (function() {
-        let input = '';
-        const target = 'ptdr';
-        return function(event) {
-          if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-            return;
-          }
-          input += event.key;
-          if (input.length > target.length) {
-            input = input.slice(1);
-          }
-          if (input === target) {
-            window.location.href = '/game/';
-          }
-        };
-      })());
-    });
-  </script>
   <meta property="og:title" content="APLOSN">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://aplosn.fr">
@@ -42,12 +22,13 @@
 <div id="nav-placeholder"></div>
 <nav>
     <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/membres.html">Membres</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a class="nav" href="/index.html">Home</a></li>
+        <li><a class="nav" href="/membres.html">Membres</a></li>
+        <li><a class="nav" href="/contact.html">Contact</a></li>
         <!--<li><a href="/pages/formation">Formation</a></li>-->
-        <li><a href="/join_us.html">Join Us</a></li>
-        <li><a href="/ctf.html">Dino's CTF</a></li>
+        <li><a class="nav" href="/join_us.html">Join Us</a></li>
+        <li><a class="nav" href="/ctf.html">Dino's CTF</a></li>
+        <!--     <li><a href="/pages/newsletter">Newsletter</a></li>-->
         <!--    <li class="connect"><a href="/pages/login/login.html">Login</a></li>-->
 
     </ul>
