@@ -1,22 +1,55 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>APLOSN</title>
+  <title>APLOSN – Association pour la Promotion du Libre et de la Souveraineté Numérique</title>
+
+  <!-- Meta SEO -->
+  <meta name="description" content="L'APLOSN est une association française qui promeut le logiciel libre, l'open source et la souveraineté numérique à travers des événements, des formations et la sensibilisation.">
+  <meta name="keywords" content="logiciel libre, open source, souveraineté numérique, cybersécurité, association, France, APLOSN, Root Me, Hackuten, CTF, formation numérique, éthique numérique, aplosn, aplosn.fr, assocation, france">
+  <meta name="author" content="APLOSN">
+  <meta name="SIRET" content="94375183400012">
+  <meta name="SIREN" content="943751834">
+  <meta name="RNA" content="W382011690">
+  <meta name="VAT" content="FR17943751834">
+  <meta name="robots" content="index, follow">
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="APLOSN – Promotion du Libre et de la Souveraineté Numérique">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aplosn.fr">
+  <meta property="og:description" content="Association française promouvant le logiciel libre, l'open source et la souveraineté numérique. Rejoignez-nous pour des événements, CTF, ateliers et formations.">
+  <meta property="og:site_name" content="APLOSN">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://aplosn.fr/img/logo_aplosn.png"> <!-- Remplace par ton vrai logo si besoin -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="APLOSN – Promotion du Libre et de la Souveraineté Numérique">
+  <meta name="twitter:description" content="Découvrez APLOSN, l'association qui défend le logiciel libre et la souveraineté numérique en France.">
+  <meta name="twitter:image" content="https://aplosn.fr/img/logo_aplosn.png"> <!-- même image que Open Graph -->
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aplosn.fr">
+
+  <!-- Manifest & Icons -->
   <link rel="manifest" href="/manifest.json">
+  <link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/typer.css">
   <link rel="stylesheet" href="/css/cyber.css">
   <link rel="stylesheet" href="/css/membre.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- Scripts -->
   <script src="/js/index.js"></script>
-  <meta property="og:title" content="APLOSN">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aplosn.fr">
-  <meta property="og:description" content="L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France">
-  <meta property="og:site_name" content="APLOSN">
-  <meta property="og:locale" content="fr_FR">
 </head>
+<script src="https://kit.fontawesome.com/440e9fa1ba.js" crossorigin="anonymous"></script>
 <div id="nav-placeholder"></div>
 <nav>
   <ul>
@@ -24,7 +57,7 @@
     <li><a href="/membres.html">Membres</a></li>
     <li><a href="/contact.html">Contact</a></li>
     <li><a href="/pages/formation">Formation</a></li>
-    <li><a href="/pages/adhesion">Join Us</a></li>
+    <li><a href="/join_us.html">Join Us</a></li>
     <li><a href="/ctf.html">Dino's CTF</a></li>
     <!--     <li><a href="/pages/newsletter">Newsletter</a></li>-->
     <!--    <li class="connect"><a href="/pages/login/login.html">Login</a></li>-->
@@ -32,6 +65,7 @@
   </ul>
 </nav>
 <link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
+
 <div class="page-container">
   <div class="content">
     <body class="body">
@@ -42,17 +76,12 @@
     </budy>
 
     <div class="description-type">
-      <p>L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
+      <p data-i18n="description_header">L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France</p>
     </div>
+
+
+
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #323232;
-        color: #ffffff;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
       .member {
         display: inline-block;
         margin: 10px;
@@ -67,18 +96,22 @@
         margin: 5px 0 0 0;
         color: #ffffff;
       }
+      .mmmmmh-burger-king {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
     </style>
-
-    <section>
-      <h2>Our Members</h2>
+    <h2>Our Members</h2>
+    <section class="mmmmmh-burger-king">
       <div class="member">
         <img src="https://cdn.discordapp.com/avatars/786144801456259092/a_ae7b71bb9b330e81be977120b4986f81.gif?size=512" alt="Lux_">
-        <p>Lux_</p>
+        <a href="https://portfolio.pixelerver.fr"> <p>Lux_<i class="fa-solid fa-up-right-from-square"></i></p></a>
         <p>president</p>
       </div>
       <div class="member">
         <img src="https://cdn.discordapp.com/avatars/1072121997942861824/50393dda6612c4ac4efb257193bf53f9.webp?size=160" alt="Asuna Cracotte">
-        <p>Asuna Cracotte™</p>
+        <a href="https://cracotte.dev"><p>Asuna Cracotte™<i class="fa-solid fa-up-right-from-square"></i></p></a>
         <p>secretary</p>
       </div>
       <div class="member">
@@ -89,54 +122,25 @@
     </section>
   </div>
 
-<section class="footer">
-  <footer>
-    <div class="language-switch">
-      <label for="language-selector">Langue / Language:</label>
-      <select id="language-selector">
-        <option value="fr">Français</option>
-        <option value="en">English</option>
-      </select>
-    </div>
-    <p data-i18n="motto"></p>
-    <p>&copy; 2025 APLOSN. All rights reserved.</p>
-  </footer>
-</section>
 
-<!-- TODO: Add this css to a stylesheet -->
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-  .page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  .content {
-    flex: 1; /* pousse le footer en bas */
-  }
-
-  .footer {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer footer {
-    background-color: #1f1f1f;
-    padding: 10px;
-    width: 100%;
-  }
+  <section class="footer">
+    <footer>
+      <div class="language-switch">
+        <label for="language-selector">Langue / Language:</label>
+        <select id="language-selector">
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <p data-i18n="motto"></p>
+      <p>&copy; 2025 APLOSN. All rights reserved.</p>
+      <a href="legals/legal_mentions.html">legals mentions </a>
 
 
-</style>
+    </footer>
+
+  </section>
 </div>
+<script src="/lang.js"></script>
   </body>
 </html>
