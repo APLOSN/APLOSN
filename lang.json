@@ -1,7 +1,7 @@
 {
   "fr": {
     "title": "APLOSN",
-    "description_header": "L'APLOSN c'est l'Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France",
+    "description_header": "Association pour la Promotion du Libre, de l’Open Source et de la Souveraineté Numérique en France",
     "who_we_are": "Qui sommes nous ?",
     "paragraph1": "Nous sommes une association engagée pour un numérique libre, éthique et souverain.",
     "mission": "Notre mission : promouvoir l'utilisation, le développement et la diffusion des logiciels libres et des solutions open source.",
@@ -38,7 +38,7 @@
   },
   "en": {
     "title": "APLOSN",
-    "description_header": "APLOSN is the Association for the Promotion of Free Software, Open Source and Digital Sovereignty in France",
+    "description_header": "Association for the Promotion of Free Software, Open Source and Digital Sovereignty in France",
     "who_we_are": "Who are we?",
     "paragraph1": "We are an organization committed to a free, ethical, and sovereign digital world.",
     "mission": "Our mission: promote the use, development, and distribution of free and open-source software solutions.",
