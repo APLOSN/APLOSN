@@ -191,3 +191,7 @@ option {
     border-color: transparent;
     color: #000000;
 }
+.fa-up-right-from-square:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}

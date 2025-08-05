@@ -25,7 +25,7 @@ footer {
 .fa-x-twitter:hover,
 .fa-linkedin:hover,
 .fa-discord:hover {
-    color: #1da1f2; /* Change to your preferred color */
-    transition: color 0.2s;
-    cursor: pointer;
+    color: #1da1f2;
+    transform: scale(1.2);
+    transition: color 0.2s, transform 0.2s;
 }
