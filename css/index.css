@@ -179,3 +179,15 @@ a {
     margin-top: 2rem;
     font-weight: bold;
 }
+select {
+    border-radius: 8px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+option {
+    border-radius: 8px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #000000;
+}
