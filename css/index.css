@@ -36,21 +36,23 @@ body {
 
 }
 
+/* NavBar */
 nav {
-    background-color: #444;
     padding: 1em;
     font-family: 'Marianne', sans-serif;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: block; /* Show navbar by default */
 }
 
+/* Menu classique */
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -61,31 +63,50 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    list-style: none;
-}
-li {
-    text-decoration: none;
-    list-style: none;
 }
 
+/* Bouton burger masqué par défaut */
+.burger {
+    display: none;
+}
 
+/* --- Responsive téléphone --- */
+@media (max-width: 768px) {
+    /* Bouton burger visible uniquement sur mobile */
+    .burger {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2em;
+        position: absolute;
+        right: 1em;
+        top: 0.5em;
+        cursor: pointer;
+    }
 
-.burger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    position: fixed;
-    margin: 1em;
+    /* Masquer le menu par défaut sur mobile */
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(3, 3, 25, 0.8);
+    }
+
+    /* Afficher le menu quand on clique */
+    #nav-menu.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1em 0;
+    }
 }
 
 
-.burger-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-    padding: 0;
-}
+
+
 
 body {
     font-family: 'Marianne', sans-serif;
