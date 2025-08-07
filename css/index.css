@@ -44,6 +44,8 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
+    background-color: rgba(3, 3, 25, 0.8);
+
 }
 ul {
     list-style: none;
