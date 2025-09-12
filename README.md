@@ -74,3 +74,16 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez s
 Nous apprécions grandement le sponsoring et les dons pour soutenir notre mission. Si vous souhaitez nous soutenir, veuillez nous contacter pour plus d'informations.
 
 Merci pour votre soutien !
+
+# LICENSE
+<pre><code>
+© 2025 APLOSN 
+Publié sous Licence Ouverte Etalab 2.0.  
+Utilisation libre à des fins non commerciales, sous réserve de mention de l’auteur.
+</code></pre>
+
+---
+
+## 👨‍💻 Auteur
+Développé par **[Luxinenglish](https://github.com/Luxinenglish) & [APLOSN](https://github.com/APLOSN)**.  
+Contributions et retours bienvenus via issues ou pull requests 🚀
