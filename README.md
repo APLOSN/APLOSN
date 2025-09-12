@@ -67,14 +67,14 @@ Le site APLOSN fonctionne en utilisant des technologies web standard telles que 
 5. **Contenu** : Les pages de contenu sont organisées par langue dans les dossiers `en/` et `fr/`.
 
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous proposez.
+Contributions et retours bienvenus via issues ou pull requests 🚀
 
 ## Sponsoring et Dons
 
 Nous apprécions grandement le sponsoring et les dons pour soutenir notre mission. Si vous souhaitez nous soutenir, veuillez nous contacter pour plus d'informations.
 
 Merci pour votre soutien !
-
+---
 # LICENSE
 <pre><code>
 © 2025 APLOSN 
@@ -86,4 +86,3 @@ Utilisation libre à des fins non commerciales, sous réserve de mention de l’
 
 ## 👨‍💻 Auteur
 Développé par **[Luxinenglish](https://github.com/Luxinenglish) & [APLOSN](https://github.com/APLOSN)**.  
-Contributions et retours bienvenus via issues ou pull requests 🚀
