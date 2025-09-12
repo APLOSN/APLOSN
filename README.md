@@ -41,7 +41,7 @@ Thank you for your support!
 This project is released under the **Open License 2.0 (Etalab 2.0)**.  
 
 <pre><code>
-© 2025 [Developer Name]  
+© 2025 APLOSN
 Published under the Etalab Open License 2.0.  
 Free to use for non-commercial purposes, provided the author is credited.
 </code></pre>
@@ -49,7 +49,7 @@ Free to use for non-commercial purposes, provided the author is credited.
 ---
 
 ## 👨‍💻 Author
-Developed by **[Luxinenglish](https://github.com/Luxinenglish)**.  
+Developed by **[Luxinenglish](https://github.com/Luxinenglish) & [APLOSN](https://github.com/APLOSN)**.  
 Contributions and feedback are welcome via issues or pull requests 🚀
 
 
