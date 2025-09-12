@@ -1,39 +1,40 @@
-🇬🇧
-# APLOSN Website
+🇬🇧  
+# 🌐 APLOSN Website
 
-Welcome to the website of the Association for the Promotion of Free Software, Open Source, and Digital Sovereignty (APLOSN).
+Welcome to the website of the **Association for the Promotion of Free Software, Open Source, and Digital Sovereignty (APLOSN)**. 💻✨
 
-## License
+## 📜 License
 
-This project is licensed under the MIT license. All rights reserved to APLOSN.
+This project is licensed under the **Etalab 2.0 LICENSE**. All rights reserved to APLOSN.
 
-## Architecture
+## 🏗️ Architecture
 The APLOSN project is structured to separate different responsibilities and facilitate code maintenance and evolution. Here is an overview of the project's architecture:
 
-- [`index.html`](./index.html): The homepage of the site, with a script to redirect users based on their language.
-- `en/`: Contains the English pages.
-- `fr/`: Contains the French pages.
-- `css/`: Contains the CSS files for the site's styling.
-- `js/`: Contains the JavaScript files for interactive features.
-- `img/`: Contains the images used on the site.
-- [`manifest.json`](./manifest.json): The manifest file for Progressive Web Apps (PWA).
+- [`index.html`](./index.html) 🏠: The homepage of the site, with a script to redirect users based on their language.  
+- `en/` 🇬🇧: Contains the English pages.  
+- `fr/` 🇫🇷: Contains the French pages.  
+- `css/` 🎨: Contains the CSS files for the site's styling.  
+- `js/` ⚡: Contains the JavaScript files for interactive features.  
+- `img/` 🖼️: Contains the images used on the site.  
+- [`manifest.json`](./manifest.json) 📱: The manifest file for Progressive Web Apps (PWA).
 
-## Functionality
-The APLOSN website operates using standard web technologies such as HTML, CSS, and JavaScript. Here is an overview of its functionality:
+## ⚙️ Functionality
+The APLOSN website operates using standard web technologies such as HTML, CSS, and JavaScript. Here's an overview of its functionality:
 
-1. **Homepage**: The [`index.html`](./index.html) page loads a script that detects the user's language and redirects them to the appropriate version of the site (English or French).
-2. **PWA Manifest**: The [`manifest.json`](./manifest.json) file enables the site to function as a Progressive Web App, providing an enhanced user experience on mobile devices.
-3. **Styles**: The CSS files in the `css/` folder define the site's visual style.
-4. **Scripts**: The JavaScript files in the `js/` folder add interactive features to the site.
-5. **Content**: The content pages are organized by language in the `en/` and `fr/` folders.
+1. **Homepage** 🏠: [`index.html`](./index.html) detects the user's language and redirects to the appropriate version.  
+2. **PWA Manifest** 📱: [`manifest.json`](./manifest.json) enables the site to function as a Progressive Web App for mobile users.  
+3. **Styles** 🎨: CSS files define the site's visual style.  
+4. **Scripts** ⚡: JavaScript files add interactive features.  
+5. **Content** 📝: Content pages are organized by language (`en/` and `fr/` folders).
 
-Contributions are welcome! If you would like to contribute, please submit a pull request or open an issue to discuss the changes you propose.
+Contributions are welcome! 🛠️ Submit a pull request or open an issue to discuss proposed changes.  
 
-## Sponsorship and Donations
+## 💖 Sponsorship and Donations
 
-We greatly appreciate sponsorship and donations to support our mission. If you would like to support us, please contact us for more information.
+We greatly appreciate sponsorship and donations to support our mission. Contact us for more information.
 
-Thank you for your support!
+Thank you for your support! 🙏
+
 ---
 
 ## 📜 License
@@ -52,48 +53,48 @@ Free to use for non-commercial purposes, provided the author is credited.
 Developed by **[Luxinenglish](https://github.com/Luxinenglish) & [APLOSN](https://github.com/APLOSN)**.  
 Contributions and feedback are welcome via issues or pull requests 🚀
 
-
 ---
-🇫🇷
 
-# APLOSN Website
+🇫🇷  
+# 🌐 APLOSN Website
 
-Bienvenue sur le site de l'Association pour la Promotion du Libre, de l'Open Source et de la Souveraineté Numérique (APLOSN).
+Bienvenue sur le site de l'**Association pour la Promotion du Libre, de l'Open Source et de la Souveraineté Numérique (APLOSN)** 💻✨
 
-## Licence
+## 📜 Licence
 
-Ce projet est sous licence MIT. Tous droits réservés à APLOSN.
+Ce projet est sous licence **Etalab 2.0 LICENSE**. Tous droits réservés à APLOSN.
 
-## Architecture
-Le projet APLOSN est structuré de manière à séparer les différentes responsabilités et à faciliter la maintenance et l'évolution du code. Voici un aperçu de l'architecture du projet :
+## 🏗️ Architecture
+Le projet APLOSN est structuré pour séparer les responsabilités et faciliter la maintenance. Voici un aperçu :
 
-- [`index.html`](./index.html)` : La page d'accueil du site, avec un script pour rediriger les utilisateurs en fonction de leur langue.
-- `en/` : Contient les pages en anglais.
-- `fr/` : Contient les pages en français.
-- `css/` : Contient les fichiers CSS pour le style du site.
-- `js/` : Contient les fichiers JavaScript pour les fonctionnalités interactives.
-- `img/` : Contient les images utilisées sur le site.
-- [`manifest.json`](./manifest.json) : Le fichier de manifeste pour les Progressive Web Apps (PWA).
+- [`index.html`](./index.html) 🏠 : Page d'accueil avec redirection selon la langue.  
+- `en/` 🇬🇧 : Pages en anglais.  
+- `fr/` 🇫🇷 : Pages en français.  
+- `css/` 🎨 : Fichiers CSS pour le style du site.  
+- `js/` ⚡ : Fichiers JavaScript pour les fonctionnalités interactives.  
+- `img/` 🖼️ : Images utilisées sur le site.  
+- [`manifest.json`](./manifest.json) 📱 : Fichier de manifeste pour les PWA.
 
-## Fonctionnement
-Le site APLOSN fonctionne en utilisant des technologies web standard telles que HTML, CSS et JavaScript. Voici un aperçu de son fonctionnement :
+## ⚙️ Fonctionnement
+Le site APLOSN utilise HTML, CSS et JavaScript. Voici un résumé :
 
-1. **Page d'accueil** : La page [`index.html`](./index.html) charge un script qui détecte la langue de l'utilisateur et redirige vers la version appropriée du site (anglais ou français).
-2. **Manifest PWA** : Le fichier [`manifest.json`](./manifest.json) permet au site de fonctionner comme une Progressive Web App, offrant une expérience utilisateur améliorée sur les appareils mobiles.
-3. **Styles** : Les fichiers CSS dans le dossier `css/` définissent le style visuel du site.
-4. **Scripts** : Les fichiers JavaScript dans le dossier `js/` ajoutent des fonctionnalités interactives au site.
-5. **Contenu** : Les pages de contenu sont organisées par langue dans les dossiers `en/` et `fr/`.
-
+1. **Page d'accueil** 🏠 : [`index.html`](./index.html) détecte la langue et redirige vers la version correspondante.  
+2. **Manifest PWA** 📱 : [`manifest.json`](./manifest.json) permet une expérience améliorée sur mobile.  
+3. **Styles** 🎨 : CSS définit le style visuel.  
+4. **Scripts** ⚡ : JavaScript ajoute des fonctionnalités interactives.  
+5. **Contenu** 📝 : Organisé par langue (`en/` et `fr/`).
 
 Contributions et retours bienvenus via issues ou pull requests 🚀
 
-## Sponsoring et Dons
+## 💖 Sponsoring et Dons
 
-Nous apprécions grandement le sponsoring et les dons pour soutenir notre mission. Si vous souhaitez nous soutenir, veuillez nous contacter pour plus d'informations.
+Nous apprécions le sponsoring et les dons pour soutenir notre mission. Contactez-nous pour plus d'infos.
 
-Merci pour votre soutien !
+Merci pour votre soutien ! 🙏
+
 ---
-# LICENSE
+
+## 📜 LICENSE
 <pre><code>
 © 2025 APLOSN 
 Publié sous Licence Ouverte Etalab 2.0.  
