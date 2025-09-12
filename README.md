@@ -34,6 +34,24 @@ Contributions are welcome! If you would like to contribute, please submit a pull
 We greatly appreciate sponsorship and donations to support our mission. If you would like to support us, please contact us for more information.
 
 Thank you for your support!
+---
+
+## 📜 License
+
+This project is released under the **Open License 2.0 (Etalab 2.0)**.  
+
+<pre><code>
+© 2025 [Developer Name]  
+Published under the Etalab Open License 2.0.  
+Free to use for non-commercial purposes, provided the author is credited.
+</code></pre>
+
+---
+
+## 👨‍💻 Author
+Developed by **[Luxinenglish](https://github.com/Luxinenglish)**.  
+Contributions and feedback are welcome via issues or pull requests 🚀
+
 
 ---
 🇫🇷
